@@ -1,1 +1,28 @@
-<b> this is my first page</b>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GitHub Profile Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1 class="title">GitHub Profile Finder</h1>
+
+    <form id="search-form" class="search" aria-label="Search GitHub user">
+      <label for="username" class="visually-hidden">GitHub username</label>
+      <input id="username" name="username" type="text" placeholder="Enter GitHub username" autocomplete="off" required />
+      <button type="submit" id="search-btn">Search</button>
+    </form>
+
+    <div id="message" role="status" aria-live="polite" class="message"></div>
+
+    <section id="result" class="result" hidden>
+      <!-- JS will populate result card here -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
